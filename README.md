@@ -1,2 +1,2 @@
 # MythHub
-Welcome... TO HELL!!!
+Welcome to the nigger world
