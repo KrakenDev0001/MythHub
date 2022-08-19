@@ -4,3 +4,6 @@ end
 if tostring(game.PlaceId) == '537413528' then
     loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/BaBfT.lua'))()
 end
+if tostring(game.PlaceId) == '7991339063' then
+    loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/RainbowFriends.lua'))()
+end
