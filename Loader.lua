@@ -11,5 +11,5 @@ if tostring(game.PlaceId) == '8540346411' then
     loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/RebirthChampionsX.lua'))()
 end
 if tostring(game.PlaceId) == '9598746251' then
-    loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/HomeRunSimulator.lua))()
+    loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/HomeRunSimulator.lua'))()
 end
