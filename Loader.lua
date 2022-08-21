@@ -1,9 +1,8 @@
 -- Key --
-_G.wl_key="Put Your Key Here"
+_G.wl_key="Put Key Here"
 
 
 -- Detecting Game --
-local suggestedScript = ""
 local detectedGame = "Future thing ;)"
 
 if tostring(game.PlaceId) == '9498006165' then
@@ -29,11 +28,11 @@ local Loader = Luminosity.new("Myth Hub", "")
 
 local Suggested = Loader.Tab("Suggested", "Auto detected for your game", "")
 local YourGame = Suggested.Folder("For your game", "")
-	--if(suggestedScript) then do 
+	if (suggestedScript) then 
 		YourGame.Button("Launch Suggested Script", "Load", function()
 			loadstring(game:HttpGet(suggestedScript))()
-			end)
-		--end
+		end)
+	end
 local MainSettings = Loader.Tab("GUI")
 local GUISettings = MainSettings.Folder("GUI Settings", "Control the GUI")
     KillGUI = GUISettings.Button("Self Drestruct GUI", "Delete evidence", function()
