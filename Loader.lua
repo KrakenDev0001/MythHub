@@ -1,5 +1,5 @@
 -- Key --
-_G.wl_key="Put Key Here"
+--_G.wl_key="Put Key Here and remove the two dashes"
 
 
 -- Detecting Game --
