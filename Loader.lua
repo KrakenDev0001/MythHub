@@ -1,9 +1,5 @@
--- Key --
---_G.wl_key="Put Key Here and remove the two dashes"
-
-
 -- Detecting Game --
-local detectedGame = "Future thing ;)"
+local detectedGame = "Future thing"
 
 if tostring(game.PlaceId) == '9498006165' then
     suggestedScript = "https://scripts.luawl.com/MythHub/TappingSimulator.lua"
