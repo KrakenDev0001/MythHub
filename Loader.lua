@@ -16,6 +16,9 @@ end
 if tostring(game.PlaceId) == '9598746251' then
     suggestedScript="https://scripts.luawl.com/MythHub/HomeRunSimulator.lua"
 end
+if tostring(game.PlaceId) == '13822889' then
+    game.Players.LocalPlayer:kick("This script is NOT meant for LT2!!!")
+end
 
 -- GUI Loading --
 local Luminosity = loadstring(game:HttpGet("https://raw.githubusercontent.com/iHavoc101/Genesis-Studios/main/UserInterface/Luminosity.lua", true))()
