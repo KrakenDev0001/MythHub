@@ -19,6 +19,9 @@ end
 if tostring(game.PlaceId) == '13822889' then
     game.Players.LocalPlayer:kick("This script is NOT meant for LT2!!!")
 end
+if tostring(game.PlaceId) == '10675066724' then
+	suggestedScript="https://scripts.luawl.com/MythHub/SlimeTT.lua"
+end
 
 -- GUI Loading --
 local Luminosity = loadstring(game:HttpGet("https://raw.githubusercontent.com/iHavoc101/Genesis-Studios/main/UserInterface/Luminosity.lua", true))()
@@ -71,3 +74,8 @@ local HRSTab = Loader.Tab("Home Run Simulator")
 		HRSexecute = HRSScript.Button("Execute", "U=Hecker", function()
 			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/HomeRunSimulator.lua'))()
 		end)
+local SlimeTTTab = Loader.Tab("Slime Tower Tycoon")
+	local SlimeTTScript = SlimeTTTab.Folder("Script", "Options for the Slime Tower Tycoon script")
+		SlimeTTExecute = SlimeTTScript.Button("Execute", "Launch!!!", function()
+			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/SlimeTT.lua'))()
+			end)
