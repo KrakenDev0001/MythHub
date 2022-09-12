@@ -1,5 +1,6 @@
 -- Detecting Game --
 local detectedGame = "Future thing ;)"
+local suggestedScript = false
 
 if tostring(game.PlaceId) == '9498006165' then
     suggestedScript = "https://scripts.luawl.com/MythHub/TappingSimulator.lua"
@@ -26,7 +27,7 @@ end
 -- GUI Loading --
 local Luminosity = loadstring(game:HttpGet("https://raw.githubusercontent.com/iHavoc101/Genesis-Studios/main/UserInterface/Luminosity.lua", true))()
 
-local Loader = Luminosity.new("Myth Hub", "")
+local Loader = Luminosity.new("Myth Hub", "Loader")
 
 local Suggested = Loader.Tab("Suggested", "Auto detected for your game", "")
 local YourGame = Suggested.Folder("For your game", "")
@@ -48,34 +49,3 @@ local PremTab = Loader.Tab("Premium")
 		CopyDisc = Buy.Button("Discord Invite to Buy", "Copy", function()
 			setclipboard("https://discord.gg/bkhHEMT6Nx")
 		end)
-		
-local BuildABoatTab = Loader.Tab("Build a Boat")
-	local BaBScript = BuildABoatTab.Folder("Script", "Options for the BaBfT script")
-		BaBExecute = BaBScript.Button("Execute", "Do it B)", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/BaBfT.lua'))()
-			end)
-local TapSimTab = Loader.Tab("Tapping Simulator")
-	local TapScript = TapSimTab.Folder("Script", "Options for the Tapping Sim script")
-		BaBExecute = TapScript.Button("Execute", "Really?", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/TappingSimulator.lua'))()
-			end)
-local RFTab = Loader.Tab("Rainbow Friends")
-	local RFScript = RFTab.Folder("Script", "Options for the Rainbow Friends script")
-		RFExecute = RFScript.Button("Execute", "Mommy?", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/RainbowFriends.lua'))()
-		end)
-local RCXTab = Loader.Tab("RebirthChampionsX")
-	local RCXScript = RCXTab.Folder("Script", "Options for the RebirthChampionsX script")
-		RCXxecute = RCXScript.Button("Execute", "Bruh.", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/RebirthChampionsX.lua'))()
-		end)
-local HRSTab = Loader.Tab("Home Run Simulator")
-	local HRSScript = HRSTab.Folder("Script", "Options for the Home Run Simulator script")
-		HRSexecute = HRSScript.Button("Execute", "U=Hecker", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/HomeRunSimulator.lua'))()
-		end)
-local SlimeTTTab = Loader.Tab("Slime Tower Tycoon")
-	local SlimeTTScript = SlimeTTTab.Folder("Script", "Options for the Slime Tower Tycoon script")
-		SlimeTTExecute = SlimeTTScript.Button("Execute", "Launch!!!", function()
-			loadstring(game:HttpGet('https://scripts.luawl.com/MythHub/SlimeTT.lua'))()
-			end)
